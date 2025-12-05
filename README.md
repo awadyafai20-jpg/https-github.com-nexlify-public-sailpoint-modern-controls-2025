@@ -17,7 +17,3 @@ Production-ready SailPoint IdentityIQ / IdentityNow rules we ship to every clien
 
 Originally published by Nexlify Innovations Inc  
 License: MIT
-
-Part 3 of the open-source IAM series:  
-→ Part 1: Phishing 22% → 0.4%  
-→ Part 2: 48-hour contractor onboarding
