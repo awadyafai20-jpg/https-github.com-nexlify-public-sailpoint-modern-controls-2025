@@ -1,0 +1,7 @@
+// Real-Time Toxic Combination Blocker (SoD at request time)
+if (entitlements.contains("Finance_Admin") && entitlements.contains("AP_Processor")) {
+    request.setStatus("Rejected");
+    request.addComment("Toxic combination: Finance_Admin + AP_Processor");
+    return false;
+}
+return true;
