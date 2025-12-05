@@ -1,0 +1,6 @@
+<Trigger type="IdentityRiskScore">
+  <Condition>identity.riskScore >= 750</Condition>
+  <Action>CreateCertification</Action>
+  <Scope>Manager</Scope>
+  <Description>High risk identity – immediate review</Description>
+</Trigger>
