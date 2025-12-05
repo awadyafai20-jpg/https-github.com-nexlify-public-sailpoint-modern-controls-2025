@@ -1,0 +1,9 @@
+<Rule name="AutoDisable25Days" type="IdentityTrigger">
+  <Source><![CDATA[
+    long cutoff = System.currentTimeMillis() - (25L * 24 * 60 * 60 * 1000);
+    if (identity.getLastLogin() == null || identity.getLastLogin().getTime() < cutoff) {
+        identity.setInactive(true);
+        context.saveObject(identity);
+    }
+  ]]></Source>
+</Rule>
