@@ -1,0 +1,6 @@
+<Rule name="JIT_Elevation_8Hour">
+  <Source><![CDATA[
+    Date expiry = new Date(System.currentTimeMillis() + (8 * 60 * 60 * 1000));
+    identity.setAttribute("tempElevationExpiry", expiry);
+  ]]></Source>
+</Rule>
